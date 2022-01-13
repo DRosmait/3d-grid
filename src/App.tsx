@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+
+import Grid from "./components/Grid";
+
+const TransformWrapper = styled.div`
+  perspective-origin: 50% 50%;
+  transform: perspective(31.15em) rotateY(-10deg) translateY(10%);
+  transition: all 0.4s ease-out;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="u-txt-al-center">3d grid</h1>
+
+      <TransformWrapper>
+        <Grid />
+      </TransformWrapper>
     </div>
   );
 }
