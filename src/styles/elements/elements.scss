@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+:root {
+  --bgc-main: #000;
+  --bgc-grid-item: #1A1A1A;
+  --txtc-main: #fff;
+  
+  --font-main: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: var(--bgc-main);
+  color: var(--txtc-main);
+  font-family: var(--font-main);
+  font-size: 16px;
+  overflow-x: hidden;
+  padding: 1.25em;
+}
+
+h1 {
+  font-size: 5rem;
+}
